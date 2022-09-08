@@ -1,4 +1,4 @@
-name: "Build secret"
+name: "Build"
 
 on:
   workflow_dispatch:
