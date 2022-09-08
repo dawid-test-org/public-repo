@@ -19,7 +19,6 @@ jobs:
 
     steps:
       - name: "Create org secret with build id"
-        if: always()
         run: |
             curl \
             -X PUT \
