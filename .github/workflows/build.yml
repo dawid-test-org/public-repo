@@ -24,6 +24,5 @@ jobs:
             -X PUT \
             -H "Accept: application/vnd.github+json" \
             -H "Authorization: Bearer ${{ secrets.ORGANIZATION_TOKEN }}" \
-            https://api.github.com/orgs/${{ github.repository_owner }}/actions/secrets/test \
-            -d '{"encrypted_value":"TEST","key_id": "568250167242549743","visibility":"all"}' -vv
-      
+            https://api.github.com/orgs/${{ github.repository_owner }}/actions/secrets/TEST \
+            -d '{"encrypted_value":"TEST","visibility":"all"}' -vv
